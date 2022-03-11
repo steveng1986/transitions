@@ -1,64 +1,56 @@
-.transitions:hover {
-    transform: translate(200px);
+body {
+    background-image: url(./images/pista.webp);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+.transitions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.transitions:hover .transitions__circle {
+    transform: translate(1340px);
 }
 
 .transitions__circle {
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    padding: 18px;
 }
 
 .transitions__circle--one {
-    background: #c51d34;
-    transition: transform 1s linear;
+    background: #CD5C5C;
+    transition: transform 0.5s linear;
     transition-delay: 0.5s;
 }
 
 .transitions__circle--two {
-    background: #c51d34;
-    transition: transform 1s linear;
+    background: #F08080;
+    transition: transform 1s ease ;
     transition-delay: 0.5s;
 }
 
 .transitions__circle--three {
-    background: #c51d34;
-    transition: transform 1s linear;
-    transition-delay: 0.5s;
+    background: #FA8072;
+    transition: transform 1.5s ease-in;
+    transition-delay: 1.5s;
 }
 
 .transitions__circle--four {
-    background: #c51d34;
-    transition: transform 1s linear;
-    transition-delay: 0.5s;
-}
-
-.transitions__circle--five {
-    background: #c51d34;
-    transition: transform 1s linear;
-    transition-delay: 0.5s;
-}
-
-.transitions__circle--six {
-    background: #c51d34;
-    transition: transform 1s linear;
-    transition-delay: 0.5s;
-}
-
-.transitions__circle--seven {
-    background: #c51d34;
-    transition: transform 1s linear;
-    transition-delay: 0.5s;
-}
-
-.transitions__circle--eight {
-    background: #c51d34;
-    transition: transform 1s linear;
-    transition-delay: 0.5s;
+    background: #E9967A;
+    transition: transform 2.0s ease-in-out;
+    transition-delay: 2.5s;
 }
 
 .transitions__circle--nine {
-    background: #c51d34;
-    transition: transform 1s linear;
-    transition-delay: 0.5s;
+    background: #D7BDE2;
+    transition: transform 1s cubic-bezier(.2,.66,.83,.67);
+    transition-delay: 3s;
 }
 
